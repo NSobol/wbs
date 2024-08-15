@@ -27,6 +27,7 @@ ul {
   width: 1400px;
   margin: 0 auto;
   background: var(--page-background);
+  position: relative;
 }
 
 /*Блок Объявление */
@@ -191,8 +192,202 @@ ul {
 }
 
 /*Блок Основной контент */
+.treatment-online {
+  height: 785px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+}
 
+.call {
+  position: absolute;
+  left: 101px;
+  top: 853px;
+  height: 154px;
+  width: 1202px;
+  border-radius: 30px;
+  background-color: #ff84a0;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  filter: drop-shadow(10px 16px 20px rgba(159, 168, 180, 0.17));
+}
+
+.call > p {
+  width: 375px;
+  font-family: var(--first-font-family);
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: #ffffff;
+}
+
+.call-box {
+  display: flex;
+  align-items: center;
+}
+
+.call-box > img {
+  margin-right: 19px;
+}
+
+.call-box > a {
+  font-family: var(--first-font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 42px;
+  color: #fff8f8;
+}
+
+.call > a {
+  display: block;
+  width: 287px;
+  height: 49px;
+
+  background-color: #f0e0b7;
+  border-radius: 30px;
+
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--first-color);
+  padding: 14px 0;
+}
+
+.one_month {
+  height: 574px;
+  margin-top: 143px;
+  margin-bottom: 57px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.one_month-left-header,
+.contacts-left-header {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.one_month-left-header > span,
+.contacts-left-header > span {
+  margin-left: 20px;
+  color: #8a929e;
+  font-family: var(--secondary-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.one_month-left-body {
+  width: 560px;
+  height: 232px;
+
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 160%;
+  color: #26364b;
+  margin-bottom: 35px;
+}
+
+.one_month-left-body > span {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: #269bc7;
+}
+
+.one_month-left-footer {
+  width: 434px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 160%;
+  color: #5e6a7a;
+}
+
+.one_month-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+  width: 574px;
+}
+
+.one_month-right-block {
+  width: 261px;
+  height: 261px;
+  border-radius: 30px;
+  display: block;
+}
+
+.one_month-right-block-image {
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: var(--page-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 16px 25px;
+}
+
+.one_month-right-block-title {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  width: 200px;
+  color: var(--first-color);
+  margin: 0 0 32px 25px;
+}
+
+.one_month-right-block-text {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: #8a929e;
+  width: 200px;
+  margin-left: 25px;
+}
+
+.one {
+  background: #fbdcf5;
+  box-shadow: 10px 16px 20px rgba(159, 168, 180, 0.17);
+}
+
+.two {
+  background: #deecf7;
+}
+
+.three {
+  background: #c0e9fc;
+}
+
+.four {
+  background: #deedfe;
+}
+
+.problem {
+  height: 1050px;
+  background-color: #c5c8e2;
+}
+
+.deficit {
+  height: 702px;
+  background-image: url('../images/fon1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .articles {
   background-color: #ffffff;
   padding: 119px 100px;
@@ -241,15 +436,13 @@ ul {
   font-weight: 600;
 }
 
-.article:first-child{
-	margin-bottom: 29px;
+.article:first-child {
+  margin-bottom: 29px;
 }
 
 .articles-right {
   width: 533px;
 }
-
-
 
 .subscribe {
   width: 1400px;
@@ -403,4 +596,8 @@ ul {
   font-family: var(--secondary-font-family);
   font-size: 1rem;
   font-weight: 500;
+}
+
+.hidden {
+  display: none;
 }

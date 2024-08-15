@@ -16,11 +16,12 @@
 
 	<div class="page">
 		<!--Блок объявления -->
-		<div class="advertisement">
+		<div class="advertisement "> <!--Стобы спрятать объявление нужно добавить класс hidden -->
 			<div class="advertisement-block">
 				<img src="./images/persent.svg" alt="Процент" class="advertisement-block-img">
 				<p class="advertisement-block-text">Горячее предложение <span>Скидка 20%</span></p>
-				<p class="advertisement-block-clock">07:51:40</p>
+				<p class="advertisement-block-clock"><span id="hour">07</span>:<span id="minutes">51</span>:<span
+						id="second">40</span></p>
 			</div>
 			<a href="#" class="advertisement-link">Посмотреть тариф</a>
 		</div>
@@ -30,7 +31,6 @@
 			<div class="header-top">
 				<div class="header-top-left">
 					<img src="./images/Logo.svg" alt="Логотип">
-					<!-- <img src="./images/logo2.svg" alt="Школа женской красоты"> -->
 					<div class="header-top-left-text">
 						<span>Школа</span>
 						<img src="./images/dot.svg" alt="">
@@ -40,19 +40,23 @@
 					</div>
 				</div>
 				<div class="header-top-right">
-					<a href="#" class="header-top-right-text">Написать менеджеру</a>
+					<a href="https://wa.me/message/D44A6NYCZOSFA1" target="_blank"
+						class="header-top-right-text">Написать менеджеру</a>
 					<div class="header-top-right-social">
 						<ul>
 							<li>
-								<a href="#" class="header-top-right-social-link"><img src="./images/telegramm.svg"
-										alt=""></a>
+								<a href="https://t.me/Hair2021Bot" target="_blank"
+									class="header-top-right-social-link"><img src="./images/telegramm.svg"
+										alt="Телеграмм"></a>
 							</li>
 							<li>
-								<a href="#" class="header-top-right-social-link"><img src="./images/watsapp.svg"
-										alt=""></a>
+								<a href="https://wa.me/message/D44A6NYCZOSFA1" target="_blank"
+									class="header-top-right-social-link"><img src="./images/watsapp.svg"
+										alt="Ватсапп"></a>
 							</li>
 							<li>
-								<a href="#" class="header-top-right-social-link"><img src="./images/vk.svg" alt=""></a>
+								<a href="https://vk.me/volosy.wbsschool" target="_blank"
+									class="header-top-right-social-link"><img src="./images/vk.svg" alt="Вконтакте"></a>
 							</li>
 						</ul>
 					</div>
@@ -93,50 +97,100 @@
 			</div>
 			<div class="call">
 				<p>Восстановите волосы с вашим личным врачом прямо сейчас</p>
-				<div>
+				<div class="call-box">
 					<img src="./images/phone.svg" alt="">
 					<a href="tel:+7 (928) 600-96-91">+7 (928) 600-96-91</a>
 				</div>
-				<a href="#">Хочу красивые волосы</a>
-
+				<a href="https://t.me/Hair2021Bot">Хочу красивые волосы</a>
 			</div>
 			<div class="one_month">
 				<div class="one_month-left">
-					<p><img src="./images/Line.svg" alt="">Программа против выпадения волос</p>
-					<p>Как за 1 месяц остановить выпадение волос, чтобы
+					<p class="one_month-left-header"><img src="./images/Line.svg" alt="">
+						<span>Программа против выпадения волос</span>
+					</p>
+					<p class="one_month-left-body">Как <span>за 1 месяц</span> остановить выпадение волос, чтобы
 						они приобрели здоровый
 						вид и густоту</p>
-					<p>На прием к врачу не выходя из дома, достаточно иметь интернет</p>
+					<p class="one_month-left-footer">На прием к врачу не выходя из дома, достаточно иметь интернет</p>
 				</div>
 				<div class="one_month-right">
-					<a href="#" class="one_month-right-block one">
-						<img src="./images/diagnost.svg" alt="">
-						<p>Диагностика</p>
-						<p>И работа с пищевым поведением</p>
+					<a href="https://vypadenie.volos.quiz.wbsschool.ru/" class="one_month-right-block one">
+						<div class="one_month-right-block-image">
+							<img src="./images/diagnost.svg" alt="">
+						</div>
+						<p class="one_month-right-block-title">Диагностика</p>
+						<p class="one_month-right-block-text">И работа с пищевым поведением</p>
 					</a>
 					<a href="#" class="one_month-right-block two">
-						<img src="./images/med_recom.svg" alt="">
-						<p>Персональные рекомендации врача</p>
-						<p>И поддержка в чате с куратором</p>
+						<div class="one_month-right-block-image">
+							<img src="./images/med_recom.svg" alt="">
+						</div>
+						<p class="one_month-right-block-title">Персональные рекомендации врача</p>
+						<p class="one_month-right-block-text">И поддержка в чате <br /> с куратором</p>
 					</a>
-					<a href="#" class="one_month-right-block three">
-						<img src="./images/smail.svg" alt="">
-						<p>Индивидуальные онлайн-консультации врача</p>
-						<p>Время приёма и подбор витаминов</p>
+					<a href="https://t.me/Hair2021Bot" class="one_month-right-block three">
+						<div class="one_month-right-block-image">
+							<img src="./images/smail.svg" alt="">
+						</div>
+						<p class="one_month-right-block-title">Индивидуальные онлайн-консультации врача</p>
+						<p class="one_month-right-block-text">Время приёма и подбор витаминов</p>
 					</a>
 					<a href="#" class="one_month-right-block four">
-						<img src="./images/scissors.svg" alt="">
-						<p>Вы научитесь правильному уходу</p>
-						<p>Остановите выпадение и восстановите объем</p>
+						<div class="one_month-right-block-image">
+							<img src="./images/scissors.svg" alt="">
+						</div>
+						<p class="one_month-right-block-title">Вы научитесь правильному уходу</p>
+						<p class="one_month-right-block-text">Остановите выпадение и восстановите объем</p>
 					</a>
 				</div>
 
 			</div>
 			<div class="problem">
+				<p class="one_month-left-header"><img src="./images/Line.svg" alt="">
+					<span>Что мы лечим</span>
+				</p>
+				<div class="title">
+					<span>Проблемы</span> или причины выпадения
+				</div>
+				<p class="subtitle">
+					Причины выпадения и истончения волос
+				</p>
+				<div class="problem-tabs">
+
+				</div>
 
 			</div>
 			<div class="deficit">
-
+				<p>Основная причина всего</p>
+				<h3>Дефицит микроэлементов
+					в организме человека</h3>
+				<p>Большую часть необходимых микроэлементов мы получаем из пищи,
+					поэтому дефицит чаще всего связан именно с неполноценным или
+					неправильно организованным питанием. Если текущие потребности
+					организма не обеспечиваются пищей, следует заняться изменением рациона</p>
+				<div>
+					<div>
+						<p>Есть и другие причины, связанные с работой органов и образом жизни. Например:</p>
+						<a href="#">Узнать больше</a>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<img src="./images/white_check.svg" alt=""><span>заболевания ЖКТ</span>
+							</li>
+							<li>
+								<img src="./images/white_check.svg" alt=""><span>прием лекарств</span>
+							</li>
+							<li>
+								<img src="./images/white_check.svg" alt=""><span>курение и регулярное употребление
+									алкоголя</span>
+							</li>
+							<li>
+								<img src="./images/white_check.svg" alt=""><span>перенесенные операции</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="how-work">
 
@@ -186,7 +240,44 @@
 
 			</div>
 			<section class="contacts">
+				<div class="contacts-left">
+					<p class="contacts-left-header"><img src="./images/Line.svg" alt="">
+						<span>О нас</span>
+					</p>
+					<h3>Наши контакты</h3>
+					<div class="contacts-left-body">
+						<ul>
+							<li>
+								<img src="./images/watsapp.svg" alt="Напишите в WhatsApp">
+								<p><a href="#">Напишите в WhatsApp</a></p>
+							</li>
+							<li>
+								<img src="./images/telegramm.svg" alt="Напишите в телеграмм">
+								<p><a href="#">Напишите в Telegram</a></p>
+							</li>
+							<li>
+								<img src="./images/phone_blue.svg" alt="Позвонить">
+								<p><a href="tel: +7(928) 600-96-91">+7(928) 600-96-91</a></p>
+							</li>
+							<li>
+								<img src="./images/info.svg" alt="Информация для клиентов">
+								<p><a href="#">Информация для клиентов</a></p>
+							</li>
+							<li>
+								<img src="./images/location.svg" alt="Город">
+								<p><a href="#">г.Ростов-на-Дону</a></p>
+							</li>
+							<li>
+								<img src="./images/mail.svg" alt="Письмо">
+								<p><a href="mailto: mail@volosy.wbsschool.ru">mail@volosy.wbsschool.ru</a></p>
+							</li>
+						</ul>
+					</div>
 
+				</div>
+				<div class="contacts-right">
+					<img src="" alt="">
+				</div>
 			</section>
 
 			<section class="articles">
