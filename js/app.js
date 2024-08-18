@@ -4,10 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let arrayTabs = Array.from(tabs);
   const contents = document.querySelectorAll('.tab-content');
   let arrayContents = Array.from(contents);
-
-  console.log(tabs);
-  console.log(contents);
-
   let tabIndex = arrayTabs.findIndex((elem) =>
     elem.classList.contains('tab-active')
   );
@@ -21,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     change(tabIndex);
     tabIndex = index;
     change(tabIndex);
-    console.log(tabIndex);
   }
 
   const ul = document.querySelector('.menu-tabs');
@@ -30,6 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
     let index = arrayTabs.findIndex((elem) => elem === li);
     if (li) {
       getTab(index);
+    }
+  });
+
+  const footerMenu = document.querySelector('.footer-top-right-menu');
+  const footerMenuList = document.querySelectorAll(
+    '.footer-top-right-menu-item'
+  );
+  let activMenu;
+  footerMenu.addEventListener('click', (e) => {
+    let li = e.target.closest('li');
+
+    if (activMenu === li) {
+      activMenu.classList.toggle('activ');
+    } else {
+      li.classList.add('activ');
+      activMenu?.classList?.remove('activ');
+      activMenu = li;
     }
   });
 });
