@@ -631,6 +631,123 @@ ul {
   height: 575px;
   background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
   padding: 82px 100px 81px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.how-work-left-text {
+  width: 585px;
+  font-family: var(--first-font-family);
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: var(--first-color);
+  margin-bottom: 75px;
+}
+
+.how-work-left-text>span{
+  color: #269BC7;
+}
+
+.contacts {
+  width: 1400px;
+  height: 399px;
+  padding: 0 100px;
+  background: #ffffff;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+p.contacts-left-header {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.contacts-title {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+  margin-bottom: 79px;
+  margin-left: 70px;
+}
+
+.contacts-left-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-left-body-one {
+  margin-right: 43px;
+}
+
+.contacts-left-body-one > li,
+.contacts-left-body-two > li {
+  height: 49px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-left-body-one > li > a,
+.contacts-left-body-two > li > a {
+  font-family: var(--secondary-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.contacts-left-body-one > li:hover,
+.contacts-left-body-two > li:hover {
+  color: #269bc7;
+}
+
+.icon {
+  height: 59px;
+  width: 59px;
+  border-radius: 50%;
+  background-color: #f2f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+}
+
+.icon > svg {
+  width: 20px;
+  height: 20px;
+  stroke: #26364b;
+}
+
+.stroke {
+  fill: #26364b;
+}
+
+.icon:hover > svg {
+  stroke: #269bc7;
+  fill: #269bc7;
+}
+
+.contacts-right > p {
+  width: 552px;
+  height: 375px;
+  background-image: url('../images/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  font-size: 6rem;
+  color: #d9d9e4;
+  padding: 110px;
 }
 
 .articles {
