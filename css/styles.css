@@ -195,6 +195,9 @@ ul {
 .treatment-online {
   height: 785px;
   background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  /* box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75) inset;
+  -webkit-box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75);
+  -moz-box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75) inset; */
 }
 
 .call {
@@ -1059,6 +1062,247 @@ ul {
   line-height: 160%;
   letter-spacing: -0.005em;
   color: #26364b;
+}
+
+.diploms {
+  width: 1400px;
+  height: 545px;
+  background-color: var(--page-background);
+  padding: 0 100px;
+  margin: 77px 0 50px;
+}
+
+.diploms-title {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 46px;
+  color: #404e61;
+  text-align: center;
+}
+
+.diploms-subtitle {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 60px;
+  letter-spacing: -0.005em;
+  color: rgba(38, 54, 75, 0.54);
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.diploms-slider {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ant-carousel {
+  width: 1059px;
+  height: 355px;
+  margin: 0 auto;
+}
+
+.ant-carousel-hider {
+  overflow: hidden;
+}
+
+.ant-carousel-list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-carousel-element {
+  display: block;
+  flex: 0 0 auto;
+  width: 252px;
+  height: 355px;
+  background-size: contain;
+  background-position: center;
+}
+
+.ant-carousel-element img {
+  width: 252px;
+  height: 355px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+}
+
+.ant-carousel-arrow-left,
+.ant-carousel-arrow-right {
+  position: absolute;
+  top: 40%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 11px 16px;
+  text-align: center;
+  color: #ebecf3;
+}
+
+.ant-carousel-arrow-left {
+  left: 0;
+  margin: 0;
+  background-color: #ffffff;
+  box-shadow: -4px 10px 20px rgba(159, 168, 180, 0.27);
+}
+
+.ant-carousel-arrow-right {
+  right: 0;
+  margin: 0;
+  background: #ffffff;
+  box-shadow: 10px 16px 20px rgba(159, 168, 180, 0.17);
+}
+
+.ant-carousel-arrow-left:hover {
+  color: #269bc7;
+}
+
+.ant-carousel-arrow-right:hover {
+  color: #269bc7;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83px;
+  height: 9px;
+  margin-top: 48px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background: #f2f6fb;
+  border-radius: 50%;
+}
+
+.dot-active {
+  background: #269bc7;
+}
+
+.effectiveness {
+  display: flex;
+  margin: 0 100px;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dashboard-item-data {
+  position: absolute;
+  top: 17%;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+svg {
+  width: 115px;
+  height: 115px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 4.46px;
+  stroke: #f2f6fb;
+}
+
+[class^='meter-'] {
+  fill: none;
+  stroke-width: 4.46px;
+  stroke-linecap: round;
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 90;
+  stroke: #ff84a0;
+  transform: rotate(25deg);
+  transform-origin: 50% 50%;
+  animation: progress-2 1s ease-out;
+}
+.meter-2 {
+  stroke: #ff84a0;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 270;
+  transform: rotate(-120deg);
+  transform-origin: 50% 50%;
+  animation: progress-3 0.75s ease-out;
+}
+.meter-3 {
+  stroke: #ff84a0;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 324;
+  transform: rotate(-110deg);
+  transform-origin: 50% 50%;
+  animation: progress-4 0.5s ease-out;
+}
+
+.meter-4 {
+  stroke: #ff84a0;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 180;
+  transform: rotate(60deg);
+  transform-origin: 50% 50%;
+  animation: progress-5 0.5s ease-out;
+}
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 90;
+  }
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 270;
+  }
+}
+
+@keyframes progress-4 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 324;
+  }
+}
+
+@keyframes progress-5 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 180;
+  }
 }
 
 .answers {
