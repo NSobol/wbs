@@ -840,9 +840,61 @@ ul {
   display: flex;
 }
 
+.whom-block-title {
+  width: 464px;
+  height: 232px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+  margin-bottom: 69px;
+}
+
+.whom-block-text {
+  width: 336px;
+  height: 52px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
 .whom-questions-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 17px 23px;
+}
+
+.whom-questions-list-item {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 50.3px;
+  background: #f2f6fb;
+  border-radius: 15px;
+}
+
+.whom-questions > a {
+  display: block;
+  width: 257px;
+  height: 63px;
+  background: linear-gradient(89.18deg, #108abd -4.19%, #4cb9d8 112.48%);
+  box-shadow: 0px 4px 8px rgba(152, 177, 160, 0.5);
+  border-radius: 50px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--page-background);
+  text-align: center;
+  padding: 20px;
+  margin-top: 68px;
 }
 
 .treatment {
