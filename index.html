@@ -113,7 +113,60 @@
 		<!--Блок Основной контент -->
 		<main class="main">
 			<section class="treatment-online" id="main">
+				<div class="cookie">
+					<p class="cookie-text">Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем
+						<span>cookies</span>
+					</p>
+					<button class="cookie-button">OK</button>
+				</div>
+				<div class="treatment-online-wrapper">
+					<div class="treatment-online-text">
+						<h1 class="treatment-online-title">Лечение выпадения волос в клинике
+							<span>онлайн</span>
+						</h1>
+						<p class="treatment-online-subtitle">“Восстановите свои волосы - восстановите свою жизнь”</p>
+						<div class="treatment-online-rates">
+							<ul class="treatment-online-rates-list">
+								<li class="treatment-online-rates-list-item">
+									<img src="./images/recommendation.svg" alt="">
+									<span>Доверие… забота… конфиденциальность</span>
+								</li>
+								<li class="treatment-online-rates-list-item">
+									<img src="./images/recommendation.svg" alt="">
+									<span>Мы поможем вам вернуть здоровые волосы</span>
+								</li>
+								<button class="treatment-online-video ">
+									<img src="./images/video.svg" alt="Видео">
+									<span>Смотреть видео</span>
+								</button>
+							</ul>
+						</div>
+						<div class="treatment-online-reasons-wrapper">
+							<form class="treatment-online-reasons">
+								<span class="treatment-online-reason-title">Причины выпадения волос</span>
+								<select class="treatment-online-reason-select" name="reasons" id="reasons">
+									<option class="treatment-online-reason-item" value="стресс и образ жизни">стресс и образ жизни</option>
+									<option class="treatment-online-reason-item" value="дефицит питательных веществ">дефицит питательных веществ</option>
+									<option class="treatment-online-reason-item" value="после родов">после родов</option>
+								</select>
+								<label for="reasons"></label>
+							</form>
+							<div>
+								<a href=" https://t.me/Hair2021Bot"
+									class="treatment-online-free-consultation">Бесплатная
+									консультация</a>
+							</div>
 
+						</div>
+					</div>
+					<div class="treatment-online-photos">
+						<img src="./images/girl1.png" alt="Фото девушки" class="treatment-online-photo1">
+						<img src="./images/Ellipse_main.png" alt="" class="treatment-online-photo2">
+						<img src="./images/girl2.png" alt="Фото девушки" class="treatment-online-photo3">
+						<img src="./images/girl3.png" alt="Фото девушки" class="treatment-online-photo4">
+
+					</div>
+				</div>
 			</section>
 			<div class="call">
 				<p>Восстановите волосы с вашим личным врачом прямо сейчас</p>
@@ -496,7 +549,6 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="whom">
 				<div class="whom-block">
 					<div class="how-work-left-header whom-block-header">
@@ -641,11 +693,10 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="packages">
 				<h2 class="packages-title">Пакеты</h2>
 				<div class="packages-container">
-					<div class="package-item">
+					<div class="package-item" id="package-item-light">
 						<img class="package-item-photo" src="./images/lait.png" alt="">
 						<div class="package-item-container">
 							<h4 class="package-item-title">Самостоятельное прохождение</h4>
@@ -653,10 +704,10 @@
 							</p>
 							<div class="package-item-buy">
 								<p class="package-item-buy-price light">14 950 ₽</p>
-								<button class="package-item-buy-button">
+								<a href="#prices" class="package-item-buy-button">
 									<span>купить</span>
 									<img src="./images/basket.svg" alt="Купить">
-								</button>
+								</a>
 							</div>
 							<div class="package-item-footer">
 								<span>60 дней</span>
@@ -690,7 +741,7 @@
 							</div>
 							<div class="package-item-buy">
 								<p class="package-item-buy-price standard">25 700 ₽</p>
-								<a href="#" class="package-item-buy-button">
+								<a href="#prices" class="package-item-buy-button">
 									<span>купить</span>
 									<img src="./images/basket.svg" alt="Купить">
 								</a>
@@ -728,7 +779,7 @@
 							</div>
 							<div class="package-item-buy">
 								<p class="package-item-buy-price premium">39 800 ₽</p>
-								<a href="#" class="package-item-buy-button">
+								<a href="#prices" class="package-item-buy-button">
 									<span>купить</span>
 									<img src="./images/basket.svg" alt="Купить">
 								</a>
@@ -1012,7 +1063,62 @@
 
 			</section>
 			<section class="doctor">
+				<div class="doctor-container">
+					<div class="doctor-block">
+						<h3 class="doctor-block-title">Врач</h3>
+						<div class="doctor-block-photo">
+						</div>
+						<button class="doctor-block-video">
+							<img src="./images/video.svg" alt="Видео">
+							<span>Смотреть видео</span>
+						</button>
+						<a href="https://t.me/Hair2021Bot" class="doctor-block-link">Оставить заявку на консультацию</a>
+					</div>
+					<div class="doctor-description">
+						<h3 class="doctor-description-title">Оксана Тарасянц</h3>
+						<p class="doctor-description-subtitle">Доктор эндокринолог-гинеколог, врач интегративной
+							медицины</p>
+						<p class="doctor-description-text">
+							Лучшие инвестиции - это здоровье и образование. Мне не безразличны проблемы, с которыми вы
+							приходите. Я помогаю людям
+							остановить выпадение волос, выяснив основную причину. Мои клиенты получают ответы на свои
+							вопросы, даже иногда за
+							рамками программы.
+							Не останавливайтесь в попытках улучшить свое здоровье
+						</p>
 
+						<div class="doctor-description-details">
+							<p class="doctor-description-detail detail-one">Категория:</p>
+							<p class="doctor-description-detail detail-two">Образование:</p>
+							<p class="doctor-description-detail detail-three">Специализация:</p>
+							<p class="doctor-description-detail detail-four">Опыт работы:</p>
+							<p class="doctor-description-detail detail-five">Интересные факты:</p>
+							<p class="doctor-description-detail-item detail-six">Врач высшей категории
+							</p>
+							<p class="doctor-description-detail-item detail-seven">РУДН, РостГМУ</p>
+							<p class="doctor-description-detail-item detail-eight">акушерство и гинекология,
+								эндокринология,
+								восполнение дефицитных состояний
+							</p>
+							<p class="doctor-description-detail-item detail-nine">Медицинский стаж 30 лет</p>
+							<div class="doctor-description-detail-item detail-ten">Эксперт Telegram-канала
+								<a href="https://t.me/zhenskoe_zdoroviye">Женское здоровье</a>
+							</div>
+							<div class="doctor-description-detail-social detail-eleven">
+								<a href="https://vk.com/volosy.wbsschool">
+									<img src="./images/vk_grey.svg" alt="Вконтакте">
+								</a>
+								<a href="https://t.me/zhenskoe_zdoroviye">
+									<img src="./images/telega1.svg" alt="Телеграмм">
+								</a>
+								<a href="https://dzen.ru/womenbeautyschool">
+									<img src="./images/zen.svg" alt="Дзен">
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="diploms">
 				<h2 class="diploms-title">Дипломы и сертификаты</h2>
@@ -1219,7 +1325,180 @@
 				</div>
 			</section>
 			<section class="course-prices" id="prices">
+				<div class="course-price">
+					<div class="course-price-description">
+						<div class="course-price-title">Стоимость курса</div>
+						<img src="./images/course.png" alt="" class="course-price-photo">
+						<p class="course-price-subtitle">Рассрочка по тарифу от 1000 ₽ / мес</p>
+						<ol class="course-price-offers">
+							<li class="course-price-offer course-price-offer-blue">волосы перестанут выпадать через 1
+								месяц
+							</li>
+							<li class="course-price-offer">индивидуальная программа рекомендаций
+							</li>
+							<li class="course-price-offer">оплата в рассрочку на 6, 9 и 12 месяцев</li>
+						</ol>
+						<p class="course-price-rates-title">Выберите подходящий тариф</p>
+						<p class="course-price-rates">
+							<button class="course-price-rate rate-light">Лайт</button>
+							<button class="course-price-rate">Стандарт</button>
+							<button class="course-price-rate">Премиум</button>
+						</p>
+					</div>
+					<div class="course-rate-buy">
+						<div class="course-rate-buy-title">Ваш тариф: Лайт</div>
+						<p class="course-rate-buy-subtitle">Стоимость выбранного курса 14 950 ₽</p>
+						<a href="#package-item-light" class="course-rate-buy-rate-link">подробнеe о тарифе</a>
+						<form action="">
+							<p class="course-rate-buy-step">Шаг первый. Выберите способ оплаты</p>
+							<div class="course-rate-buy-radio">
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="card"
+									value="По карте" checked>
+								<label for="card"></label>
+								<span class="course-rate-buy-radio-card">По карте</span>
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="installment"
+									value="В рассрочку">
+								<label for="installment"></label>
+								<span class="course-rate-buy-radio-installment">В рассрочку</span>
+							</div>
+							<p class="course-rate-buy-step">Шаг второй. Заполните данные о плательщике</p>
+							<input type="text" placeholder="Фамилия и имя плательщика" class="course-rate-buy-fio">
+							<div class="course-rate-buy-contacts">
+								<input type="text" placeholder="emai" class="course-rate-buy-contact">
+								<input type="text" placeholder="+7 900 000 00 00" class="course-rate-buy-contact">
+							</div>
 
+							<button class="course-rate-buy-pay" type="submit">Оплатить</button>
+							<div class="course-rate-checkbox">
+								<input type="checkbox" name="checkbox" id="checkbox"
+									class="course-rate-checkbox-required" required>
+								<label for="checkbox" class="course-rate-checkbox-label">
+									нажимая Оплатить, вы соглашаетесь с <a href="#">Политикой</a> и <a
+										href="#">Офертой</a>
+								</label>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+				<div class="course-price hidden">
+					<div class="course-price-description">
+						<div class="course-price-title">Стоимость курса</div>
+						<img src="./images/course1.png" alt="" class="course-price-photo">
+						<p class="course-price-subtitle">Рассрочка по тарифу от 2000 ₽ / мес</p>
+						<ol class="course-price-offers">
+							<li class="course-price-offer course-price-offer-blue">волосы перестанут выпадать через 1
+								месяц
+							</li>
+							<li class="course-price-offer">индивидуальная программа рекомендаций
+							</li>
+							<li class="course-price-offer">оплата в рассрочку на 6, 9 и 12 месяцев</li>
+						</ol>
+						<p class="course-price-rates-title">Выберите подходящий тариф</p>
+						<p class="course-price-rates">
+							<button class="course-price-rate">Лайт</button>
+							<button class="course-price-rate rate-standart">Стандарт</button>
+							<button class="course-price-rate">Премиум</button>
+						</p>
+					</div>
+					<div class="course-rate-buy">
+						<div class="course-rate-buy-title">Ваш тариф: Стандарт</div>
+						<p class="course-rate-buy-subtitle">Стоимость выбранного курса 25 700 ₽</p>
+						<a href="#package-item-light" class="course-rate-buy-rate-link">подробнеe о тарифе</a>
+						<form action="">
+							<p class="course-rate-buy-step">Шаг первый. Выберите способ оплаты</p>
+							<div class="course-rate-buy-radio">
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="card"
+									value="По карте">
+								<label for="card"></label>
+								<span class="course-rate-buy-radio-card">По карте</span>
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="installment"
+									value="В рассрочку">
+								<label for="installment"></label>
+								<span class="course-rate-buy-radio-installment">В рассрочку</span>
+							</div>
+							<p class="course-rate-buy-step">Шаг второй. Заполните данные о плательщике</p>
+							<input type="text" placeholder="Фамилия и имя плательщика" class="course-rate-buy-fio">
+							<div class="course-rate-buy-contacts">
+								<input type="text" placeholder="emai" class="course-rate-buy-contact">
+								<input type="text" placeholder="+7 900 000 00 00" class="course-rate-buy-contact">
+							</div>
+
+							<button class="course-rate-buy-pay" type="submit">Оплатить</button>
+							<div class="course-rate-checkbox">
+								<input type="checkbox" name="checkbox" id="checkbox"
+									class="course-rate-checkbox-required" required>
+								<label for="checkbox" class="course-rate-checkbox-label">
+									нажимая Оплатить, вы соглашаетесь с <a href="#">Политикой</a> и <a
+										href="#">Офертой</a>
+								</label>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+				<div class="course-price hidden">
+					<div class="course-price-description">
+						<div class="course-price-title">Стоимость курса</div>
+						<img src="./images/course2.png" alt="" class="course-price-photo">
+						<p class="course-price-subtitle">Рассрочка по тарифу от 3000 ₽ / мес</p>
+						<ol class="course-price-offers">
+							<li class="course-price-offer course-price-offer-blue">волосы перестанут выпадать через 1
+								месяц
+							</li>
+							<li class="course-price-offer">индивидуальная программа рекомендаций
+							</li>
+							<li class="course-price-offer">оплата в рассрочку на 6, 9 и 12 месяцев</li>
+						</ol>
+						<p class="course-price-rates-title">Выберите подходящий тариф</p>
+						<p class="course-price-rates">
+							<button class="course-price-rate">Лайт</button>
+							<button class="course-price-rate">Стандарт</button>
+							<button class="course-price-rate rate-premium">Премиум</button>
+						</p>
+					</div>
+					<div class="course-rate-buy ">
+						<div class="course-rate-buy-title">Ваш тариф: Премиум</div>
+						<p class="course-rate-buy-subtitle">Стоимость выбранного курса 39 800 ₽</p>
+						<a href="#package-item-light" class="course-rate-buy-rate-link">подробнеe о тарифе</a>
+						<form action="">
+							<p class="course-rate-buy-step">Шаг первый. Выберите способ оплаты</p>
+							<div class="course-rate-buy-radio">
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="card"
+									value="По карте">
+								<label for="card"></label>
+								<span class="course-rate-buy-radio-card">По карте</span>
+								<input class="course-rate-buy-radio-check" type="radio" name="payment" id="installment"
+									value="В рассрочку">
+								<label for="installment"></label>
+								<span class="course-rate-buy-radio-installment">В рассрочку</span>
+							</div>
+							<p class="course-rate-buy-step">Шаг второй. Заполните данные о плательщике</p>
+							<input type="text" placeholder="Фамилия и имя плательщика" class="course-rate-buy-fio">
+							<div class="course-rate-buy-contacts">
+								<input type="text" placeholder="emai" class="course-rate-buy-contact">
+								<input type="text" placeholder="+7 900 000 00 00" class="course-rate-buy-contact">
+							</div>
+
+							<button class="course-rate-buy-pay" type="submit">Оплатить</button>
+							<div class="course-rate-checkbox">
+								<input type="checkbox" name="checkbox" id="checkbox"
+									class="course-rate-checkbox-required" required>
+								<label for="checkbox" class="course-rate-checkbox-label">
+									нажимая Оплатить, вы соглашаетесь с <a href="#">Политикой</a> и <a
+										href="#">Офертой</a>
+								</label>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
 			</section>
 			<section class="contacts" id="about">
 				<div class="contacts-left">
@@ -1309,7 +1588,6 @@
 					<p>карта</p>
 				</div>
 			</section>
-
 			<section class="articles">
 				<h2 class="articles-title">Статьи</h2>
 				<div class="articles-container">

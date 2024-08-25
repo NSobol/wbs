@@ -206,9 +206,217 @@ ul {
 .treatment-online {
   height: 785px;
   background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
-  /* box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75) inset;
-  -webkit-box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75);
-  -moz-box-shadow: -1px 2px 23px 19px rgba(250, 237, 253, 0.75) inset; */
+  position: relative;
+  padding: 91px 100px;
+}
+
+.cookie {
+  position: absolute;
+  width: 721px;
+  height: 58px;
+  top: 0;
+  left: calc(50% - 721px / 2 + 3.5px);
+  background: #ffffff;
+  border: 2px solid #859571;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-text {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: -0.015em;
+  color: #1f1f1f;
+}
+
+.cookie-text > span {
+  text-decoration-line: underline;
+}
+
+.cookie-button {
+  width: 68px;
+  height: 30px;
+  background: #0169fe;
+  border-radius: 7.46479px;
+  border: transparent;
+
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-left: 22px;
+}
+
+.treatment-online-wrapper {
+  display: flex;
+}
+
+.treatment-online-title {
+  width: 554px;
+  height: 169px;
+
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.875rem;
+  line-height: 58px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.treatment-online-title > span {
+  color: #269bc7;
+}
+
+.treatment-online-subtitle {
+  width: 717px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  letter-spacing: 0.005em;
+  color: var(--first-color);
+  margin-top: 27px;
+}
+
+.treatment-online-photo1 {
+  display: block;
+  width: 197px;
+  height: 197px;
+  margin-top: -40px;
+  margin-left: -144px;
+}
+
+.treatment-online-photo2 {
+  display: block;
+  width: 125px;
+  height: 124px;
+  margin-top: -145px;
+  margin-left: 165px;
+}
+
+.treatment-online-photo3 {
+  width: 254px;
+  height: 254px;
+  margin-left: 216px;
+  margin-top: -128px;
+}
+
+.treatment-online-photo4 {
+  width: 319px;
+  height: 319px;
+  filter: drop-shadow(31px 4px 50px rgba(0, 0, 0, 0.08));
+  margin-left: 40px;
+  margin-top: -144px;
+}
+
+.treatment-online-rates {
+  margin-top: 19px;
+}
+
+.treatment-online-rates-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.treatment-online-rates-list-item > span {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 42px;
+  letter-spacing: 0.005em;
+  color: var(--first-color);
+  margin-left: 23px;
+}
+
+.treatment-online-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -23px 0px 18px 456px;
+  border: none;
+  background-color: transparent;
+}
+
+.treatment-online-video > img {
+  width: 61px;
+  height: 61px;
+}
+
+.treatment-online-video > span {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--first-color);
+  margin-left: 13px;
+}
+
+.treatment-online-reasons-wrapper {
+  position: relative;
+}
+
+.treatment-online-reasons {
+  width: 656px;
+  height: 97px;
+  background: #ffffff;
+  border: 2px solid rgba(212, 215, 229, 0.47);
+  border-radius: 20px;
+  /* padding: 17px 26px 17px 40px; */
+}
+
+.treatment-online-reason-title {
+  display: block;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  color: rgba(128, 135, 191, 0.46);
+}
+
+.treatment-online-reason-select {
+  border: none;
+  outline: none;
+  width: 654px;
+}
+
+option.treatment-online-reason-item {
+  width: 656px;
+  height: 57px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.treatment-online-free-consultation {
+  position: absolute;
+  top: 16px;
+  left: 375px;
+  display: block;
+  width: 266px;
+  height: 63px;
+  background: linear-gradient(89.18deg, #108abd -4.19%, #4cb9d8 112.48%);
+  box-shadow: 0px 4px 8px rgba(152, 177, 160, 0.5);
+  border-radius: 50px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 42px;
+  color: var(--page-background);
+  text-align: center;
+  padding-top: 9px;
 }
 
 .call {
@@ -1503,6 +1711,206 @@ div.package-item-subtitle {
   color: var(--first-color);
 }
 
+.doctor {
+  width: 1400px;
+  height: 815px;
+  padding: 117px 100px 76px;
+}
+
+.doctor-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctor-block-title {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #404e61;
+}
+
+.doctor-block-photo {
+  width: 394px;
+  height: 414px;
+  background: linear-gradient(
+    180.36deg,
+    #f6f6f8 0.53%,
+    #f7f8fa 16.28%,
+    #f7f8fa 37.39%,
+    #f7f7f9 67.56%,
+    #f6f6f6 99.9%
+  );
+  border-radius: 30px;
+  background-image: url('./../images/doc.png');
+  margin-top: 51px;
+}
+
+.doctor-block-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -30px auto 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.doctor-block-video > img {
+  width: 61px;
+  height: 61px;
+}
+
+.doctor-block-video > span {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--first-color);
+  margin-left: 13px;
+}
+
+.doctor-block-link {
+  display: block;
+  width: 363px;
+  height: 63px;
+  background: linear-gradient(89.18deg, #108abd -4.19%, #4cb9d8 112.48%);
+  box-shadow: 0px 4px 8px rgba(152, 177, 160, 0.5);
+  border-radius: 50px;
+  margin: 0 auto;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.doctor-description-title {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875rem;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+  padding-left: 20px;
+}
+
+.doctor-description-subtitle {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.005em;
+  color: #269bc7;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.doctor-description-text {
+  width: 647px;
+  height: 215px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  border-radius: 30px;
+  padding: 42px 31px;
+
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: #8a929e;
+}
+
+.doctor-description-details {
+  width: 661px;
+  height: 215px;
+  margin-top: 41px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px 0;
+  grid-template-areas:
+    'detail-one  detail-six detail-six detail-six .'
+    'detail-two  detail-seven detail-seven detail-seven .'
+    'detail-three  detail-eight detail-eight detail-eight .'
+    'detail-four  detail-nine detail-nine detail-nine .'
+    'detail-five  detail-ten detail-ten detail-ten detail-eleven';
+}
+
+.doctor-description-detail {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.doctor-description-detail-item {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.doctor-description-detail-item > a {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  text-decoration-line: underline;
+  color: #4cb9d8;
+}
+
+.doctor-description-detail-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-one {
+  grid-area: detail-one;
+}
+.detail-two {
+  grid-area: detail-two;
+}
+.detail-three {
+  grid-area: detail-three;
+}
+.detail-four {
+  grid-area: detail-four;
+}
+.detail-five {
+  grid-area: detail-five;
+}
+.detail-six {
+  grid-area: detail-six;
+}
+.detail-seven {
+  grid-area: detail-seven;
+}
+.detail-eleven {
+  grid-area: detail-eleven;
+}
+.detail-eight {
+  grid-area: detail-eight;
+}
+.detail-nine {
+  grid-area: detail-nine;
+}
+.detail-ten {
+  grid-area: detail-ten;
+}
+
 .diploms {
   width: 1400px;
   height: 545px;
@@ -2008,6 +2416,354 @@ p.accordion-item-title:last-child {
   font-size: 0.75rem;
   letter-spacing: -0.005em;
   color: #8a929e;
+}
+
+.course-prices {
+  width: 1400px;
+  height: 914px;
+  padding: 128px 100px 40px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+}
+
+.course-price {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 10px 16px 40px rgba(159, 168, 180, 0.27);
+  border-radius: 25px;
+}
+
+.course-price-description {
+  width: 600px;
+  height: 746px;
+  padding: 42px 64px 75px;
+  background: #ffffff;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.course-price-title {
+  width: 286px;
+  height: 48px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+  margin-bottom: 18px;
+}
+
+.course-price-photo {
+  width: 472px;
+  height: 230px;
+  border-radius: 30px;
+  margin-bottom: 47px;
+}
+
+.course-price-subtitle {
+  width: 390px;
+  height: 31px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 31px;
+  color: var(--first-color);
+  margin-bottom: 19px;
+}
+
+.course-price-offers {
+  padding-left: 20px;
+  margin-bottom: 47px;
+}
+
+.course-price-offer {
+  width: 365px;
+  height: 26px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-price-offer-blue {
+  color: #269bc7;
+}
+
+.course-price-rates-title {
+  width: 323px;
+  height: 31px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 31px;
+  color: var(--first-color);
+}
+
+.course-price-rates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.course-price-rate {
+  width: 127px;
+  height: 43px;
+  border-radius: 7px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+  color: #dedfe9;
+  background: #ffffff;
+  box-shadow: 10px 16px 40px rgba(159, 168, 180, 0.27);
+  border: 2px solid #dedfe9;
+  cursor: pointer;
+}
+
+.rate-light {
+  color: var(--page-background);
+  background: #d5e15d;
+  border-color: transparent;
+}
+
+.rate-standart {
+  color: var(--page-background);
+  background: #ff84a0;
+  border-color: transparent;
+}
+
+.rate-premium {
+  color: var(--page-background);
+  background: #269bc7;
+  border-color: transparent;
+}
+
+.course-rate-buy {
+  background-color: #ebecf3;
+  padding: 43px 32px 54px 66px;
+  width: 601px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.course-rate-buy-title {
+  height: 48px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-rate-buy-subtitle {
+  height: 48px;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding-top: 12px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-rate-buy-rate-link {
+  display: block;
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding-top: 17px;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+  opacity: 0.5;
+  margin-bottom: 52px;
+}
+
+.course-rate-buy-step {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-rate-buy-radio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.course-rate-buy-radio-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.course-rate-buy-radio-check + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.course-rate-buy-radio-check + label::before {
+  content: '';
+  display: inline-block;
+  width: 232px;
+  height: 76px;
+  background: #ffffff;
+  border-radius: 20px;
+  background-image: url('./../images/pay1.png');
+  background-repeat: no-repeat;
+  background-position: top 19px left 20px;
+  background-size: 13px 13px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.course-rate-buy-radio-check + label::before {
+  content: '';
+  display: inline-block;
+  width: 232px;
+  height: 76px;
+  background: #ffffff;
+  border-radius: 20px;
+  background-image: url('./../images/pay1.png');
+  background-repeat: no-repeat;
+  background-position: top 19px left 20px;
+  background-size: 13px 13px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.course-rate-buy-radio-check:checked + label::before {
+  background-image: url('./../images/pay2.png');
+  background-repeat: no-repeat;
+  background-position: top 19px left 20px;
+}
+
+.course-rate-buy-radio-card {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-rate-buy-radio-installment {
+  position: absolute;
+  top: 16px;
+  left: 314px;
+
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  color: var(--first-color);
+}
+
+.course-rate-buy-fio {
+  width: 494px;
+  height: 55px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  outline: none;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  color: #c8cadd;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+
+.course-rate-buy-contacts {
+  width: 494px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.course-rate-buy-contacts > input {
+  width: 232px;
+  height: 55px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  outline: none;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+  color: #c8cadd;
+  padding-left: 20px;
+}
+
+.course-rate-buy-pay {
+  width: 494px;
+  height: 63px;
+  background: linear-gradient(89.18deg, #108abd -4.19%, #4cb9d8 112.48%);
+  box-shadow: 0px 4px 8px rgba(152, 177, 160, 0.5);
+  border-radius: 50px;
+  border-color: transparent;
+
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+.course-rate-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-rate-checkbox-required:required {
+  background: #ffffff;
+  border: 0.5px solid #656565;
+  border-radius: 4px;
+}
+
+.course-rate-checkbox-label {
+  font-family: var(--first-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: -0.005em;
+  color: #b8b8b8;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.course-rate-checkbox-label > a {
+  color: #1991c1;
 }
 
 .contacts {
