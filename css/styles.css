@@ -2486,13 +2486,38 @@ p.accordion-item-title:last-child {
   height: 914px;
   padding: 128px 100px 40px;
   background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  position: relative;
 }
 
 .course-price {
+  position: absolute;
+  z-index: 2;
   display: flex;
   background: #ffffff;
   box-shadow: 10px 16px 40px rgba(159, 168, 180, 0.27);
   border-radius: 25px;
+}
+
+.course-prices::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: -20px;
+  width: 1436px;
+  height: 525px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  filter: blur(25px);
+}
+
+.course-prices::after {
+  content: '';
+  position: absolute;
+  top: 420px;
+  left: -20px;
+  width: 1436px;
+  height: 525px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  filter: blur(25px);
 }
 
 .course-price-description {
