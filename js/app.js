@@ -1,5 +1,6 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
+  /*Переключение табов*/
   const tabs = document.querySelectorAll('.tab');
   let arrayTabs = Array.from(tabs);
   const contents = document.querySelectorAll('.tab-content');
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  /*Меню футера*/
   const footerMenu = document.querySelector('.footer-top-right-menu');
   const footerMenuList = document.querySelectorAll(
     '.footer-top-right-menu-item'
@@ -43,5 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
       activMenu?.classList?.remove('activ');
       activMenu = li;
     }
+  });
+
+  /*Селект-меню первого блока*/
+  const select = document.querySelector('#select');
+  const btnSelect = document.querySelector('.treatment-online-reason-select');
+  const selectMenu = select.querySelector('.treatment-online-reason-menu');
+  select.addEventListener('click', (event) => {
+    btnSelect.classList.toggle('treatment-online-reason-select-active');
+    selectMenu.classList.toggle('treatment-online-reason-menu-active');
   });
 });

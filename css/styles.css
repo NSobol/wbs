@@ -255,6 +255,20 @@ ul {
 
 .treatment-online-wrapper {
   display: flex;
+  height: 603px;
+  width: 1200px;
+}
+
+.treatment-online-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 701px;
+  left: 0;
+  width: 1402px;
+  height: 136px;
+  background: linear-gradient(90deg, #f0f0fd 0%, #f7f2ff 48.65%, #faedfd 99%);
+  filter: blur(10px);
 }
 
 .treatment-online-title {
@@ -366,13 +380,12 @@ ul {
 .treatment-online-reasons {
   width: 656px;
   height: 97px;
-  background: #ffffff;
-  border: 2px solid rgba(212, 215, 229, 0.47);
-  border-radius: 20px;
-  /* padding: 17px 26px 17px 40px; */
 }
 
 .treatment-online-reason-title {
+  position: absolute;
+  left: 40px;
+  top: 20px;
   display: block;
   font-family: var(--secondary-font-family);
   font-style: normal;
@@ -384,19 +397,69 @@ ul {
 }
 
 .treatment-online-reason-select {
-  border: none;
-  outline: none;
-  width: 654px;
+  width: 656px;
+  height: 97px;
+  background: #ffffff;
+  border: 2px solid rgba(212, 215, 229, 0.47);
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 15px;
+  cursor: pointer;
 }
 
-option.treatment-online-reason-item {
+.treatment-online-reason-select::after {
+  content: '';
+  display: block;
+  background-image: url('./../images/select.svg');
+  background-size: cover;
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: 47px;
+  left: 315px;
+}
+
+.treatment-online-reason-select-active.treatment-online-reason-select::after {
+  transform: rotate(180deg);
+}
+
+.treatment-online-reason-select-active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.treatment-online-reason-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 95px;
+  left: 0;
   width: 656px;
+  height: 114px;
+  background: #fbfcfd;
+  border: 2px solid #ebecf3;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+
+.treatment-online-reason-menu-active {
+  display: block;
+}
+
+.treatment-online-reason-item {
+  width: 654px;
   height: 57px;
   font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   color: var(--first-color);
+  padding: 17px 26px 17px 40px;
+}
+
+.treatment-online-reason-item:first-child {
+  border-bottom: 2px solid #ebecf3;
 }
 
 .treatment-online-free-consultation {

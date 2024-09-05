@@ -142,15 +142,25 @@
 							</ul>
 						</div>
 						<div class="treatment-online-reasons-wrapper">
-							<form class="treatment-online-reasons">
+							<div class="treatment-online-reasons" id="select">
 								<span class="treatment-online-reason-title">Причины выпадения волос</span>
-								<select class="treatment-online-reason-select" name="reasons" id="reasons">
-									<option class="treatment-online-reason-item" value="стресс и образ жизни">стресс и образ жизни</option>
-									<option class="treatment-online-reason-item" value="дефицит питательных веществ">дефицит питательных веществ</option>
-									<option class="treatment-online-reason-item" value="после родов">после родов</option>
-								</select>
-								<label for="reasons"></label>
-							</form>
+								<button class="treatment-online-reason-select" name="reasons"
+									id="reasons" type="button" value="стресс и образ жизни" data-select="toggle"
+									data-index="0">стресс и образ жизни
+								</button>
+								<div class="treatment-online-reason-menu">
+									<ul class="treatment-online-reason-list itc-select__options">
+										<li class="treatment-online-reason-item itc-select__option"
+											value="дефицит питательных веществ" data-select="option"
+											data-value="дефицит питательных веществ" data-index="1">
+											дефицит питательных веществ
+										</li>
+										<li class="treatment-online-reason-item itc-select__option" value="после родов"
+											data-select="option" data-value="после родов" data-index="2">после родов
+										</li>
+									</ul>
+								</div>
+							</div>
 							<div>
 								<a href=" https://t.me/Hair2021Bot"
 									class="treatment-online-free-consultation">Бесплатная
